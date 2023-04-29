@@ -25,7 +25,7 @@ const Lobby: NextPage = () => {
   };
   return (
     <div className="flex justify-center bg-antiquewhite">
-      <div className=" relative bg-antiquewhite fSize:w-[250rem] w-full h-[125rem] overflow-hidden text-center text-[2rem] text-white font-buenard">
+      <div className="relative bg-antiquewhite fSize:w-[118rem] w-full h-[250rem] overflow-hidden text-center text-[2rem] text-white font-buenard">
         <img
           className="absolute top-[6.25rem] left-[15rem] w-[90rem] h-[70.02rem] object-cover"
           alt=""
