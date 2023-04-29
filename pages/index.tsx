@@ -7,9 +7,9 @@ const Home: NextPage = () => {
       <p>소프트웨어 공학 Team5 SRS</p>
       <div className="flex flex-col justify-center items-center">
         <p>UI</p>
-        <div className="flex justify-center items-center">
-          <Link href={"/lobby"}>lobby</Link>
+        <div className="flex justify-center items-center gap-3 text-11xl">
           <Link href={"/main"}>main</Link>
+          <Link href={"/lobby"}>lobby</Link>
           <Link href={"/play"}>play</Link>
         </div>
       </div>
