@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { useState } from "react";
+import React, { useState } from "react";
 import Modal from "@components/Modal";
 
 const Main: NextPage = () => {
@@ -64,23 +64,27 @@ const Main: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
             <Modal show={showModal[1]} handleClose={() => handleCloseModal(1)}>
-              <p className="text-black">안에 들어갈 데이터(게임 룰)</p>
+              <div className="w-full h-14 bg-[#D9D9D9] flex flex-row justify-center items-center  mb-[10rem]">
+                <a href="/SRS.txt" download className="no-underline">
+                  Game Rule Book dowload
+                </a>
+              </div>
             </Modal>
           </div>
           <div className="absolute top-[10.13rem] left-[0rem] shadow-[0px_0px_8px_#000] w-[37.5rem] h-[6.38rem]">
             <div className="relative bg-goldenrod-100 shadow-[6px_6px_4px_rgba(0,_0,_0,_0.25)] box-border w-[37.63rem] h-[6.38rem] border-[1px] border-solid border-gray-600"></div>
-            <b className="absolute top-[0rem] left-[0.06rem] flex items-center justify-center w-[37.44rem] h-[6.38rem]">
+            <b className="absolute top-[0rem] left-[0.06rem] flex items-center justify-center w-[37.44rem] h-[6.38rem] ">
               Game Rule
             </b>
           </div>
           {/*  TODO play*/}
           <div>
             <button
-              onClick={() => handleShowModal(1)}
+              onClick={() => handleShowModal(2)}
               className="absolute top-[20.25rem] left-[0rem] shadow-[0px_0px_8px_#000] w-[37.5rem] h-[6.38rem]
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
-            <Modal show={showModal[1]} handleClose={() => handleCloseModal(1)}>
+            <Modal show={showModal[2]} handleClose={() => handleCloseModal(2)}>
               <p className="text-black">안에 들어갈 데이터(게임 플레이)</p>
             </Modal>
           </div>

@@ -23,7 +23,6 @@ const Play: NextPage = () => {
     });
   };
   return (
-    // <div className="flex justify-center bg-antiquewhite">
     <div className="flex justify-center bg-yellowgreen relative">
       <div className=" relative bg-yellowgreen fSize:w-[120rem] w-full h-[250rem] overflow-hidden text-center text-[2.25rem] text-black font-inter">
         {/*TODO main map*/}

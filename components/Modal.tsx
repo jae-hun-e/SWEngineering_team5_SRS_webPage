@@ -17,7 +17,12 @@ const Modal = ({ handleClose, show, children }: Props) => {
     >
       <div className="w-[30vw] h-[40vh] bg-white flex flex-col justify-center items-center">
         {children}
-        <button onClick={handleClose}>close</button>
+        <button
+          onClick={handleClose}
+          className="w-[10rem] h-[3rem] text-11xl hover:bg-amber-100 hover:opacity-80 cursor-pointer"
+        >
+          close
+        </button>
       </div>
     </div>
   );
