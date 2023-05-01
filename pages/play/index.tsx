@@ -3,7 +3,7 @@ import { useState } from "react";
 import Modal from "@components/Modal";
 
 const Play: NextPage = () => {
-  const [showModal, setShowModal] = useState(Array(7).fill(false)); // [상대 농장/카드, 상대 재료, main map, 내 농장, 내 재료, 내 카드, 채팅)
+  const [showModal, setShowModal] = useState(Array(7).fill(false)); // [상대 농장/카드, 상대 재료, main map, 내 카드, 내 재료, 내 카드, 채팅)
   const handleShowModal = (idx: number) => {
     console.log("모달 열기");
     setShowModal((state) => {
@@ -499,8 +499,8 @@ const Play: NextPage = () => {
 
         {/* TODO 유저*/}
         <div>
-          {/*TODO 유저 카드*/}
           <div>
+            {/*TODO 유저 카드*/}
             <button
               onClick={() => handleShowModal(5)}
               className="absolute top-[124.13rem] left-[76.5rem] w-[7.5rem] h-[7.5rem] rounded-xl
@@ -520,11 +520,15 @@ const Play: NextPage = () => {
               />
             </div>
 
+            {/*TODO 유저 점수계산*/}
             <button
-              onClick={() => handleShowModal(5)}
+              onClick={() => handleShowModal(4)}
               className="absolute top-[124.13rem] left-[85.63rem] w-[7.5rem] h-[7.5rem] text-[4rem] rounded-xl
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
+            <Modal show={showModal[4]} handleClose={() => handleCloseModal(4)}>
+              <p className="text-black">안에 들어갈 데이터(점수계산)</p>
+            </Modal>
             <div className="absolute top-[124.13rem] left-[85.63rem] w-[7.5rem] h-[7.5rem] text-[4rem]">
               <div className="absolute top-[0rem] left-[0rem] rounded-xl bg-khaki shadow-[4px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[7.5rem] h-[7.5rem] border-[4px] border-solid border-black" />
               <div className="absolute top-[0.94rem] left-[0.94rem] rounded-xl bg-olive box-border w-[5.63rem] h-[5.63rem] border-[2px] border-solid border-black" />
@@ -589,49 +593,3 @@ const Play: NextPage = () => {
 };
 
 export default Play;
-
-// {/* TODO JS 버튼 입히기*/}
-// <div className="absolute z-50 w-[100%] h-[250rem] ">
-//   {/* main map*/}
-//   <div
-//       className="absolute top-[10rem] left-[13.44rem] w-[93.13rem] h-[74.69rem] object-cover
-//         border-[4px] border-solid border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer"
-//   ></div>
-//   {/* 상대 재료1,2,3*/}
-//   {/*1*/}
-//   <div
-//       className="absolute top-[3.9rem] left-[112.2rem] w-[5.2rem] h-[5.2rem]
-//           border-[4px] border-solid rounded-[4rem] border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer"
-//   />
-//   <div
-//       className="absolute top-[10rem] left-[0rem]  shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[10rem] h-[65rem]
-//           border-[4px] border-solid border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer"
-//   />
-//   {/*2*/}
-//   <div
-//       className="absolute top-[2.5rem] left-[23.4rem] w-[5.2rem] h-[5.2rem]
-//           border-[4px] border-solid rounded-[4rem] border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer"
-//   />
-//   <div
-//       className="absolute top-[10rem] left-[30rem] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[10rem] h-[65rem] [transform:_rotate(-90deg)] [transform-origin:0_0]
-//           border-[4px] border-solid border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer"
-//   />
-//   {/*3*/}
-//   <div
-//       className="absolute top-[3.9rem] left-[2.1rem] w-[5.2rem] h-[5.2rem]
-//           border-[4px] border-solid rounded-[4rem] border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer"
-//   />
-//   <div
-//       className="absolute top-[10rem] left-[110rem]  shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[10rem] h-[65rem]
-//           border-[4px] border-solid border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer"
-//   />
-//
-//   <div
-//       className="absolute top-[0rem] left-[0rem] box-border border-[4px]w-[10rem] h-[65rem]
-//       hover:bg-amber-100 hover:opacity-30"
-//   ></div>
-//   <div
-//       className="absolute top-[0rem] left-[0rem] box-border border-[4px]w-[10rem] h-[65rem]
-//       hover:bg-amber-100 hover:opacity-30"
-//   ></div>
-// </div>

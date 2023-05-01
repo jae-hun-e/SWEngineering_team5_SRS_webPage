@@ -12,14 +12,14 @@ const Modal = ({ handleClose, show, children }: Props) => {
     <div
       className={cls(
         show ? "block" : "hidden",
-        "z-50 w-full h-full bg-black overflow-auto bg-opacity-40 flex justify-center items-center fixed top-0 left-0"
+        "z-30 w-full h-full bg-black bg-opacity-40 flex justify-center items-center fixed top-0 left-0 "
       )}
     >
-      <div className="w-[30vw] h-[40vh] bg-white flex flex-col justify-center items-center">
-        {children}
+      <div className="w-[720px] h-[900px] pb-[80px]  bg-[#80C743] flex flex-col justify-center items-center  overflow-auto relative ">
+        <div className="w-full h-full">{children}</div>
         <button
           onClick={handleClose}
-          className="w-[10rem] h-[3rem] text-11xl hover:bg-amber-100 hover:opacity-80 cursor-pointer"
+          className="w-[150px] h-[50px] text-11xl hover:bg-amber-100 hover:opacity-80 cursor-pointer absolute bottom-5"
         >
           close
         </button>

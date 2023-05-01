@@ -47,7 +47,19 @@ const Main: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
             <Modal show={showModal[0]} handleClose={() => handleCloseModal(0)}>
-              <p className="text-black">안에 들어갈 데이터(로그인)</p>
+              <div className="p-10 flex flex-col justify-start items-center gap-10">
+                <img
+                  className="w-[600px] h-[500px]"
+                  alt=""
+                  src="/main/login.png"
+                />
+                <div className="w-[600px] h-[300px] bg-[#E4D8C6] ">
+                  <p className="p-10 text-13xl text-black text-start m-0">
+                    Login 버튼을 클릭 시, 해당 화면이 팝업되며 카카오 소셜
+                    로그인을 진행할 수 있음.
+                  </p>
+                </div>
+              </div>
             </Modal>
           </div>
           <div className="absolute top-[0rem] left-[0rem] shadow-[0px_0px_8px_#000] w-[37.5rem] h-[6.38rem]">
@@ -64,10 +76,18 @@ const Main: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
             <Modal show={showModal[1]} handleClose={() => handleCloseModal(1)}>
-              <div className="w-full h-14 bg-[#D9D9D9] flex flex-row justify-center items-center  mb-[10rem]">
-                <a href="/SRS.txt" download className="no-underline">
-                  Game Rule Book dowload
-                </a>
+              <div className="p-10 flex flex-col justify-start items-center gap-10">
+                <img
+                  className="w-[600px] h-[500px]"
+                  alt=""
+                  src="/main/down.png"
+                />
+                <div className="w-[600px] h-[300px] bg-[#E4D8C6] ">
+                  <p className="p-10 text-13xl text-black text-start m-0">
+                    Game Rule 버튼을 클릭 시, 위 파일을 다운로드 하게되며 해당
+                    PDF 파일을 통하여 게임의 전반적 룰을 확인할 수 있음.
+                  </p>
+                </div>
               </div>
             </Modal>
           </div>
@@ -85,7 +105,19 @@ const Main: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
             <Modal show={showModal[2]} handleClose={() => handleCloseModal(2)}>
-              <p className="text-black">안에 들어갈 데이터(게임 플레이)</p>
+              <div className="p-10 flex flex-col justify-start items-center gap-10">
+                <img
+                  className="w-[600px] h-[500px]"
+                  alt=""
+                  src="/main/lobby.png"
+                />
+                <div className="w-[600px] h-[300px] bg-[#E4D8C6] ">
+                  <p className="p-10 text-13xl text-black text-start m-0">
+                    Play 버튼을 클릭 시, 위 사진과 같이 게임 로비 화면으로
+                    전환됨.
+                  </p>
+                </div>
+              </div>
             </Modal>
           </div>
           <div className="absolute top-[20.25rem] left-[0rem] shadow-[0px_0px_8px_#000] w-[37.5rem] h-[6.38rem]">
