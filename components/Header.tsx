@@ -57,7 +57,7 @@ export default function Header(): JSX.Element {
         </div>
       ) : (
         <div className="w-full h-14 bg-[#D9D9D9] flex flex-row justify-center items-center">
-          <a href="/SRS.txt" download>
+          <a href="/SRS.pdf" download>
             SRS문서 다운로드하기
           </a>
         </div>
