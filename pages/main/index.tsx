@@ -77,11 +77,13 @@ const Main: NextPage = () => {
             />
             <Modal show={showModal[1]} handleClose={() => handleCloseModal(1)}>
               <div className="p-10 flex flex-col justify-start items-center gap-10">
-                <img
-                  className="w-[600px] h-[500px]"
-                  alt=""
-                  src="/main/down.png"
-                />
+                <a href="/rule.pdf" download>
+                  <img
+                    className="w-[600px] h-[500px]"
+                    alt=""
+                    src="/main/down.png"
+                  />
+                </a>
                 <div className="w-[600px] h-[300px] bg-[#E4D8C6] ">
                   <p className="p-10 text-13xl text-black text-start m-0">
                     Game Rule 버튼을 클릭 시, 위 파일을 다운로드 하게되며 해당
