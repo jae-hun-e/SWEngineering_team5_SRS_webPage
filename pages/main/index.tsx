@@ -47,17 +47,23 @@ const Main: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
             <Modal show={showModal[0]} handleClose={() => handleCloseModal(0)}>
-              <div className="p-10 flex flex-col justify-start items-center gap-10">
-                <img
-                  className="w-[600px] h-[500px]"
-                  alt=""
-                  src="/main/login.png"
-                />
-                <div className="w-[600px] h-[300px] bg-[#E4D8C6] ">
-                  <p className="p-10 text-13xl text-black text-start m-0">
-                    Login 버튼을 클릭 시, 해당 화면이 팝업되며 카카오 소셜
-                    로그인을 진행할 수 있음.
-                  </p>
+              <div>
+                <div className="p-10 flex flex-col justify-start items-center gap-10">
+                  <img
+                    className="w-[600px] h-[500px]"
+                    alt=""
+                    src="/main/login.png"
+                  />
+                  <div className="w-[600px] h-[300px] bg-[#E4D8C6] ">
+                    <p className="p-10 text-13xl text-black text-start m-0">
+                      Login 버튼을 클릭 시, 해당 화면이 팝업되며 카카오 소셜
+                      로그인을 진행할 수 있음.
+                    </p>
+                  </div>
+                </div>
+                {/*TODO 요구명세서*/}
+                <div className="h-[calc(100vh-900px)] bg-white mt-10 text-45xl text-black">
+                  <div className="w-full h-full bg-amber-200">요구명세서</div>
                 </div>
               </div>
             </Modal>

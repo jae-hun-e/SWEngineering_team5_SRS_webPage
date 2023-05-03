@@ -9,11 +9,12 @@ export default function Layout({
   children: React.ReactNode;
 }): JSX.Element {
   return (
-    <div className="flex justify-center">
-      <div className="w-full bg-white sm:w-fScreen">
+    <div className="flex justify-start">
+      <div className="w-[calc(100%-720px)] bg-white sm:w-fScreen">
         <Header />
         <Prev />
         <Next />
+
         <div className="w-full h-[100vh]">{children}</div>
       </div>
     </div>
