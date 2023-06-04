@@ -1,5 +1,5 @@
-import type { NextPage } from "next";
-import { useState } from "react";
+import type {NextPage} from "next";
+import {useState} from "react";
 import Modal from "@components/Modal";
 
 const Play: NextPage = () => {
@@ -33,7 +33,15 @@ const Play: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
           />
           <Modal show={showModal[2]} handleClose={() => handleCloseModal(2)}>
-            <p className="text-black">안에 들어갈 데이터(게임 맵)</p>
+            {/* <p className="text-black">안에 들어갈 데이터(게임 맵)</p> */}
+            <div>
+              <img
+                src="/sidebar/g_main_1.png"
+                alt=""
+                className="fixed w-[720px] bg-stone-200 border-solid border-b-[2px] border-black"
+              />
+              <img src="/sidebar/g_main_2.png" alt="" className="mt-[758.4px] w-[720px] bg-stone-200" />
+            </div>
           </Modal>
           <img
             className="absolute top-[10rem] left-[13.44rem] w-[93.13rem] h-[74.69rem] object-cover"
@@ -50,7 +58,15 @@ const Play: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
           />
           <Modal show={showModal[3]} handleClose={() => handleCloseModal(3)}>
-            <p className="text-black">안에 들어갈 데이터(유저 농장)</p>
+            {/* <p className="text-black">안에 들어갈 데이터(유저 농장)</p> */}
+            <div>
+              <img
+                src="/sidebar/g_farm_1.png"
+                alt=""
+                className="fixed w-[720px] bg-stone-200 border-solid border-b-[2px] border-black"
+              />
+              <img src="/sidebar/g_farm_2.png" alt="" className="mt-[758.4px] w-[720px] bg-stone-200" />
+            </div>
           </Modal>
           <img
             className="absolute top-[91.25rem] left-[10.38rem] w-[64.19rem] h-[45.75rem] object-cover"
@@ -67,7 +83,10 @@ const Play: NextPage = () => {
                       border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
           />
           <Modal show={showModal[6]} handleClose={() => handleCloseModal(6)}>
-            <p className="text-black">안에 들어갈 데이터(채팅)</p>
+            {/* <p className="text-black">안에 들어갈 데이터(채팅)</p> */}
+            <div>
+              <img src="/sidebar/g_chat.png" alt="" className="w-[720px] bg-stone-200" />
+            </div>
           </Modal>
 
           <div className="absolute top-[96.63rem] left-[74.5rem] bg-olivedrab box-border w-[35rem] h-[25rem] border-[3px] border-solid border-black" />
@@ -78,9 +97,7 @@ const Play: NextPage = () => {
           <div className="absolute top-[100.13rem] left-[75.13rem] w-[18.75rem] h-[4rem] text-[1.25rem] text-indigo font-buenard">
             <div className="absolute top-[0rem] left-[0rem] rounded-tl-none rounded-tr-3xs rounded-b-3xs bg-linen w-[18.75rem] h-[4rem]" />
             <div className="absolute top-[0.38rem] left-[1.31rem]">재훈</div>
-            <div className="absolute top-[2.25rem] left-[1.31rem] text-black">
-              게임을 시작하겠습니다!
-            </div>
+            <div className="absolute top-[2.25rem] left-[1.31rem] text-black">게임을 시작하겠습니다!</div>
             <div className="absolute top-[3.06rem] left-[15.25rem] text-[0.63rem] font-roboto text-gray-500 inline-block w-[3rem] h-[0.69rem]">
               오전 11:00
             </div>
@@ -507,17 +524,21 @@ const Play: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
             <Modal show={showModal[5]} handleClose={() => handleCloseModal(5)}>
-              <p className="text-black">안에 들어갈 데이터(유저카드)</p>
+              {/* <p className="text-black">안에 들어갈 데이터(유저카드)</p> */}
+              <div>
+                <img
+                  src="/sidebar/g_card_1.png"
+                  alt=""
+                  className="fixed w-[720px] bg-stone-200 border-solid border-b-[2px] border-black"
+                />
+                <img src="/sidebar/g_card_2.png" alt="" className="mt-[758.4px] w-[720px] bg-stone-200" />
+              </div>
             </Modal>
 
             <div className="absolute top-[124.13rem] left-[76.5rem] w-[7.5rem] h-[7.5rem]">
               <div className="absolute top-[0rem] left-[0rem] rounded-xl bg-khaki shadow-[4px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[7.5rem] h-[7.5rem] border-[4px] border-solid border-black" />
               <div className="absolute top-[0.94rem] left-[0.94rem] rounded-xl bg-brown box-border w-[5.63rem] h-[5.63rem] border-[2px] border-solid border-black" />
-              <img
-                className="absolute top-[1rem] left-[1rem] w-[5.5rem] h-[5.5rem]"
-                alt=""
-                src="/play/my/card1.png"
-              />
+              <img className="absolute top-[1rem] left-[1rem] w-[5.5rem] h-[5.5rem]" alt="" src="/play/my/card1.png" />
             </div>
 
             {/*TODO 유저 점수계산*/}
@@ -532,11 +553,7 @@ const Play: NextPage = () => {
             <div className="absolute top-[124.13rem] left-[85.63rem] w-[7.5rem] h-[7.5rem] text-[4rem]">
               <div className="absolute top-[0rem] left-[0rem] rounded-xl bg-khaki shadow-[4px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[7.5rem] h-[7.5rem] border-[4px] border-solid border-black" />
               <div className="absolute top-[0.94rem] left-[0.94rem] rounded-xl bg-olive box-border w-[5.63rem] h-[5.63rem] border-[2px] border-solid border-black" />
-              <img
-                className="absolute top-[1rem] left-[1rem] w-[5.5rem] h-[5.5rem]"
-                alt=""
-                src="/play/my/card2.png"
-              />
+              <img className="absolute top-[1rem] left-[1rem] w-[5.5rem] h-[5.5rem]" alt="" src="/play/my/card2.png" />
               <div className="absolute top-[0.94rem] left-[0.94rem] flex items-center justify-center w-[5.63rem] h-[5.63rem]">
                 ?
               </div>
@@ -556,11 +573,7 @@ const Play: NextPage = () => {
             <p className="text-black">안에 들어갈 데이터(상대 농장, 카드)</p>
           </Modal>
 
-          <img
-            className="absolute top-[3.94rem] left-[112.25rem] w-[5.5rem] h-[5.5rem]"
-            alt=""
-            src="/play/user.png"
-          />
+          <img className="absolute top-[3.94rem] left-[112.25rem] w-[5.5rem] h-[5.5rem]" alt="" src="/play/user.png" />
 
           <div>
             <button
@@ -569,11 +582,7 @@ const Play: NextPage = () => {
           border-[4px] border-solid rounded-[4rem] bg-transparent border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
           </div>
-          <img
-            className="absolute top-[2.5rem] left-[23.44rem] w-[5.5rem] h-[5.5rem]"
-            alt=""
-            src="/play/user.png"
-          />
+          <img className="absolute top-[2.5rem] left-[23.44rem] w-[5.5rem] h-[5.5rem]" alt="" src="/play/user.png" />
           <div>
             <button
               onClick={() => handleShowModal(0)}
@@ -581,11 +590,7 @@ const Play: NextPage = () => {
           border-[4px] border-solid rounded-[4rem] bg-transparent border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
           </div>
-          <img
-            className="absolute top-[3.94rem] left-[2.25rem] w-[5.5rem] h-[5.5rem]"
-            alt=""
-            src="/play/user.png"
-          />
+          <img className="absolute top-[3.94rem] left-[2.25rem] w-[5.5rem] h-[5.5rem]" alt="" src="/play/user.png" />
         </div>
       </div>
     </div>
