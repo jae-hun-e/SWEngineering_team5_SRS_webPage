@@ -1,6 +1,7 @@
 import type {NextPage} from "next";
 import React, {useState} from "react";
 import Modal from "@components/Modal";
+import Head from "next/head";
 
 const Main: NextPage = () => {
   const [showModal, setShowModal] = useState([false, false, false]);
@@ -112,12 +113,13 @@ const Main: NextPage = () => {
             />
             <Modal show={showModal[2]} handleClose={() => handleCloseModal(2)}>
               <div className="p-10 flex flex-col justify-start items-center gap-10">
-                <img className="w-[600px] h-[500px]" alt="" src="/main/lobby.png" />
+                {/* <img className="w-[600px] h-[500px]" alt="" src="/main/lobby.png" />
                 <div className="w-[600px] h-[300px] bg-[#E4D8C6] ">
                   <p className="p-10 text-13xl text-black text-start m-0">
                     Play 버튼을 클릭 시, 위 사진과 같이 게임 로비 화면으로 전환됨.
                   </p>
-                </div>
+                </div> */}
+                <img src="/sidebar/m_start.png" alt="" className="w-[720px] bg-stone-200" />
               </div>
             </Modal>
           </div>

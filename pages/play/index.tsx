@@ -36,11 +36,11 @@ const Play: NextPage = () => {
             {/* <p className="text-black">안에 들어갈 데이터(게임 맵)</p> */}
             <div>
               <img
-                src="/sidebar/g_main_1.png"
+                src="/sidebar/g_mainboard_1.png"
                 alt=""
                 className="fixed w-[720px] bg-stone-200 border-solid border-b-[2px] border-black"
               />
-              <img src="/sidebar/g_main_2.png" alt="" className="mt-[758.4px] w-[720px] bg-stone-200" />
+              <img src="/sidebar/g_mainboard_2.png" alt="" className="mt-[758.4px] w-[720px] bg-stone-200" />
             </div>
           </Modal>
           <img
@@ -122,7 +122,14 @@ const Play: NextPage = () => {
           border-[4px] border-solid border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10 bg-transparent"
             />
             <Modal show={showModal[1]} handleClose={() => handleCloseModal(1)}>
-              <p className="text-black">안에 들어갈 데이터(상대 재료)</p>
+              <div>
+                <img
+                  src="/sidebar/g_other_res_1.png"
+                  alt=""
+                  className="fixed w-[720px] bg-stone-200 border-solid border-b-[2px] border-black"
+                />
+                <img src="/sidebar/g_other_res_2.png" alt="" className="mt-[758.4px] w-[720px] bg-stone-200" />
+              </div>
             </Modal>
           </div>
 
@@ -548,7 +555,7 @@ const Play: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
             />
             <Modal show={showModal[4]} handleClose={() => handleCloseModal(4)}>
-              <p className="text-black">안에 들어갈 데이터(점수계산)</p>
+              <img src="/sidebar/g_score.png" alt="" className="w-[720px] bg-stone-200" />
             </Modal>
             <div className="absolute top-[124.13rem] left-[85.63rem] w-[7.5rem] h-[7.5rem] text-[4rem]">
               <div className="absolute top-[0rem] left-[0rem] rounded-xl bg-khaki shadow-[4px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[7.5rem] h-[7.5rem] border-[4px] border-solid border-black" />
@@ -570,7 +577,7 @@ const Play: NextPage = () => {
           border-[4px] border-solid rounded-[4rem] bg-transparent border-red-500 hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
           />
           <Modal show={showModal[0]} handleClose={() => handleCloseModal(0)}>
-            <p className="text-black">안에 들어갈 데이터(상대 농장, 카드)</p>
+            <img src="/sidebar/g_other_info.png" alt="" className="w-[720px] bg-stone-200" />
           </Modal>
 
           <img className="absolute top-[3.94rem] left-[112.25rem] w-[5.5rem] h-[5.5rem]" alt="" src="/play/user.png" />
