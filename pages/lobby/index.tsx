@@ -1,6 +1,6 @@
-import type { NextPage } from "next";
+import type {NextPage} from "next";
 import Modal from "@components/Modal";
-import { useState } from "react";
+import {useState} from "react";
 
 const Lobby: NextPage = () => {
   const [showModal, setShowModal] = useState([false, false, false]);
@@ -50,9 +50,17 @@ const Lobby: NextPage = () => {
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
           />
           <Modal show={showModal[1]} handleClose={() => handleCloseModal(1)}>
-            <p className="text-black">
+            {/* <p className="text-black">
               안에 들어갈 데이터(대기열 디테일, 방생성칸)
-            </p>
+            </p> */}
+            <div>
+              <img
+                src="/sidebar/l_modal_1.png"
+                alt=""
+                className="fixed w-[720px] bg-stone-200 border-solid border-b-[2px] border-black"
+              />
+              <img src="/sidebar/l_modal_2.png" alt="" className="mt-[758.4px] w-[720px] bg-stone-200" />
+            </div>
           </Modal>
         </div>
         <div className="absolute top-[37.75rem] left-[74.38rem] [filter:blur(4px)] w-[30rem] h-[43.75rem] opacity-[0.9]">
@@ -67,7 +75,10 @@ const Lobby: NextPage = () => {
                       border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
           />
           <Modal show={showModal[2]} handleClose={() => handleCloseModal(2)}>
-            <p className="text-black">안에 들어갈 데이터(방생성칸)</p>
+            {/* <p className="text-black">안에 들어갈 데이터(방생성칸)</p> */}
+            <div>
+              <img src="/sidebar/l_create.png" alt="" className="w-[720px] bg-stone-200" />
+            </div>
           </Modal>
         </div>
         <div
@@ -102,7 +113,10 @@ const Lobby: NextPage = () => {
         border-[4px] border-solid border-red-500 hover:bg-amber-100 bg-transparent hover:opacity-30 cursor-pointer z-10"
         />
         <Modal show={showModal[0]} handleClose={() => handleCloseModal(0)}>
-          <p className="text-black">안에 들어갈 데이터(대기방)</p>
+          {/* <p className="text-black">안에 들어갈 데이터(대기방)</p> */}
+          <div>
+            <img src="/sidebar/l_room.png" alt="" className="w-[720px] bg-stone-200" />
+          </div>
         </Modal>
 
         <div className="absolute top-[44.63rem] left-[16.88rem] shadow-[0px_0px_8px_#000] w-[51.88rem] h-[6.25rem]">

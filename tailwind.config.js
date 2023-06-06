@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
       fSize: "1920px",
@@ -45,6 +42,9 @@ module.exports = {
       borderRadius: {
         xl: "20px",
         "3xs": "10px",
+      },
+      zoom: {
+        80: "0.8",
       },
     },
     fontSize: {

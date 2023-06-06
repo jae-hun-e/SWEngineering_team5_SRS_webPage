@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import {useRouter} from "next/router";
 import Modal from "@components/Modal";
 
 export default function Header(): JSX.Element {
   const router = useRouter();
-  const { pathname } = router;
+  const {pathname} = router;
   const view = ["/lobby", "/main", "/play"].includes(pathname);
 
   const [showModal, setShowModal] = useState([false]);
@@ -36,7 +36,7 @@ export default function Header(): JSX.Element {
           <Link href="/">
             <div
               className=" w-20 h-full bg-contain bg-no-repeat bg-center cursor-pointer ml-10"
-              style={{ backgroundImage: "url(/main/logo.png)" }}
+              style={{backgroundImage: "url(/main/logo.png)"}}
             />
           </Link>
           {/**/}
@@ -44,14 +44,12 @@ export default function Header(): JSX.Element {
           <div>
             <button
               onClick={() => handleShowModal(0)}
-              className="w-20 h-full bg-contain bg-no-repeat bg-center cursor-pointer mr-10
+              className="w-20 h-full bg-contain bg-no-repeat bg-center mr-10
                         border-[4px] border-solid border-red-500 bg-transparent hover:bg-amber-100 hover:opacity-30 cursor-pointer z-10"
-              style={{ backgroundImage: "url(/main/mypage.png)" }}
+              style={{backgroundImage: "url(/main/mypage.png)"}}
             />
             <Modal show={showModal[0]} handleClose={() => handleCloseModal(0)}>
-              <p className="text-black  text-[3rem] ">
-                안에 들어갈 데이터(유저 마이페이지)
-              </p>
+              <img src="/sidebar/m_profile.png" alt="" className="w-[720px] bg-stone-200" />
             </Modal>
           </div>
         </div>

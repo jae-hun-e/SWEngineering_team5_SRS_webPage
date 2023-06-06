@@ -1,6 +1,7 @@
-import type { NextPage } from "next";
-import React, { useState } from "react";
+import type {NextPage} from "next";
+import React, {useState} from "react";
 import Modal from "@components/Modal";
+import Head from "next/head";
 
 const Main: NextPage = () => {
   const [showModal, setShowModal] = useState([false, false, false]);
@@ -48,7 +49,7 @@ const Main: NextPage = () => {
             />
             <Modal show={showModal[0]} handleClose={() => handleCloseModal(0)}>
               <div>
-                <div className="p-10 flex flex-col justify-start items-center gap-10">
+                {/* <div className="p-10 flex flex-col justify-start items-center gap-10">
                   <img
                     className="w-[600px] h-[500px]"
                     alt=""
@@ -60,11 +61,12 @@ const Main: NextPage = () => {
                       로그인을 진행할 수 있음.
                     </p>
                   </div>
-                </div>
+                </div> */}
                 {/*TODO 요구명세서*/}
-                <div className="h-[calc(100vh-900px)] bg-white mt-10 text-45xl text-black">
+                {/* <div className="h-[calc(100vh-900px)] bg-white mt-10 text-45xl text-black">
                   <div className="w-full h-full bg-amber-200">요구명세서</div>
-                </div>
+                </div> */}
+                <img src="/sidebar/m_login.png" alt="" className="w-[720px] bg-stone-200" />
               </div>
             </Modal>
           </div>
@@ -83,19 +85,16 @@ const Main: NextPage = () => {
             />
             <Modal show={showModal[1]} handleClose={() => handleCloseModal(1)}>
               <div className="p-10 flex flex-col justify-start items-center gap-10">
-                <a href="/rule.pdf" download>
-                  <img
-                    className="w-[600px] h-[500px]"
-                    alt=""
-                    src="/main/down.png"
-                  />
+                {/* <a href="/rule.pdf" download>
+                  <img className="w-[600px] h-[500px]" alt="" src="/main/down.png" />
                 </a>
                 <div className="w-[600px] h-[300px] bg-[#E4D8C6] ">
                   <p className="p-10 text-13xl text-black text-start m-0">
-                    Game Rule 버튼을 클릭 시, 위 파일을 다운로드 하게되며 해당
-                    PDF 파일을 통하여 게임의 전반적 룰을 확인할 수 있음.
+                    Game Rule 버튼을 클릭 시, 위 파일을 다운로드 하게되며 해당 PDF 파일을 통하여 게임의 전반적 룰을
+                    확인할 수 있음.
                   </p>
-                </div>
+                </div> */}
+                <img src="/sidebar/m_rule.png" alt="" className="w-[720px] bg-stone-200" />
               </div>
             </Modal>
           </div>
@@ -114,17 +113,13 @@ const Main: NextPage = () => {
             />
             <Modal show={showModal[2]} handleClose={() => handleCloseModal(2)}>
               <div className="p-10 flex flex-col justify-start items-center gap-10">
-                <img
-                  className="w-[600px] h-[500px]"
-                  alt=""
-                  src="/main/lobby.png"
-                />
+                {/* <img className="w-[600px] h-[500px]" alt="" src="/main/lobby.png" />
                 <div className="w-[600px] h-[300px] bg-[#E4D8C6] ">
                   <p className="p-10 text-13xl text-black text-start m-0">
-                    Play 버튼을 클릭 시, 위 사진과 같이 게임 로비 화면으로
-                    전환됨.
+                    Play 버튼을 클릭 시, 위 사진과 같이 게임 로비 화면으로 전환됨.
                   </p>
-                </div>
+                </div> */}
+                <img src="/sidebar/m_start.png" alt="" className="w-[720px] bg-stone-200" />
               </div>
             </Modal>
           </div>
